@@ -1,0 +1,24 @@
+
+.perfil-button {
+    transition: background-color 0.3s, color 0.3s; 
+    background-color: #000; 
+    color: #fff; 
+    border: 2px solid #fff; 
+    animation: cambiaBoton 3s infinite alternate; 
+  }
+
+  @keyframes cambiaBoton {
+    0% {
+      background-color: #000;
+      color: #fff;
+    }
+    50% {
+      background-color: #FFB800; 
+      color: #000; 
+    }
+    100% {
+      background-color: #000; 
+      color: #fff; 
+    }
+  }
+  

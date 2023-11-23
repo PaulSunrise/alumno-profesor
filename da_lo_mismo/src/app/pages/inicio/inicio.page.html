@@ -1,0 +1,23 @@
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <img src="assets/logoassist.jpg" class="logoapp">
+  </ion-toolbar>
+  <div class="black-rectangle">
+    <p class="nombreusuario"> Hola! {{nombre}} <br> Bienvenido a AssistQR</p>
+    <ion-button class="btn-menu center-button" (click)="mostrarMenu()">
+      <ion-icon slot="icon-only" name="menu-outline" shape="round" expand="block" fill="clear" color="warning"></ion-icon>
+      Menu
+    </ion-button>
+  
+    <img src="assets/portada2.gif" alt="Portada" class="button-image">
+
+
+    <ion-button class="btn-cerrar" (click)="cerrarSesion()" expand="block" fill="warning" shape="round" color="warning">
+      Cerrar Sesion
+    </ion-button>
+
+    
+  </div>
+
+  
+</ion-content>

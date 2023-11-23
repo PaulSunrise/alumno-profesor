@@ -1,0 +1,7 @@
+{
+  "name": "da_lo_mismo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

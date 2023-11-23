@@ -1,0 +1,76 @@
+.logoapp {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    
+  }
+  ion-button {
+    --background:#FFB800 ;
+    --padding-top: 5px;
+    --padding-bottom: 5px;
+    --color: white;
+    --border-radius: 0;
+    --border-style: solid;
+    --border-width: 2px;
+    --border-radius: 20%;
+    --border-color:black;
+
+  }
+
+  .center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+  }
+
+
+
+  .black-rectangle {
+    background-color: black;
+    padding: 20px;
+    text-align: center; 
+    color: white; 
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .button-image {
+    width: 100%; 
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .btn-cerrar{
+    margin-top:40px;
+    margin-bottom: 20px;
+  }
+ 
+  .btn-menu center-button{
+    margin-bottom: 60px;
+  }
+
+
+
+
+  .nombreusuario {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    animation: cambiaColor 3s infinite alternate; 
+  }
+
+  @keyframes cambiaColor {
+    0% {
+      color: #333; 
+    }
+    50% {
+      color: #FFB800; 
+    }
+    100% {
+      color: white; 
+    }
+  }

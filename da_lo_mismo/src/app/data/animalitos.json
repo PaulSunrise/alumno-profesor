@@ -1,0 +1,194 @@
+{
+  "usuarios": [
+    {
+      "username": "cachupina",
+      "password": "12345678",
+      "nombre": "octavio quezada",
+      "rut": "11111111-1",
+      "email": "duoc@duocuc.cl",
+      "asignatura1": "castellano",
+      "semestre1": "2010",
+      "anio_asig1": "2010",
+      "horas_asig1": "40",
+      "asignatura2": "matematica",
+      "semestre2": "4",
+      "anio_asig2": "2010",
+      "horas_asig2": "40",
+      "isactive": true,
+      "id": 1
+    },
+    {
+      "username": "demo",
+      "password": "12345678",
+      "role": "Academico",
+      "nombre": "paul",
+      "rut": "130867693",
+      "email": "ssss@paul.com",
+      "asignatura1": "castellano",
+      "semestre1": "2022",
+      "anio_asig1": "2023",
+      "horas_asig1": "45",
+      "asignatura2": "matematica",
+      "semestre2": "6",
+      "anio_asig2": "2011",
+      "horas_asig2": "50",
+      "isactive": true,
+      "id": 2
+    },
+    {
+      "username": "demo1",
+      "password": "demo11",
+      "role": "Academico",
+      "email": "paul@duoc.com",
+      "isactive": true,
+      "id": 3
+    },
+    {
+      "username": "paul",
+      "password": "12345678",
+      "role": "Servicios",
+      "asignatura2": "biologia1111111111",
+      "isactive": true,
+      "id": 4
+    },
+    {
+      "username": "paul2",
+      "password": "12345678",
+      "role": "academico",
+      "nombre": "paul",
+      "rut": "16792378-k",
+      "email": "sddf@duocuc.cl",
+      "asignatura1": "mate",
+      "semestre1": "bio",
+      "anio_asig1": "2024",
+      "horas_asig1": "40",
+      "asignatura2": "bio4",
+      "semestre2": "2",
+      "anio_asig2": "2024",
+      "horas_asig2": "40",
+      "isactive": true,
+      "id": 5
+    },
+    {
+      "username": "machuca",
+      "password": "machuca",
+      "nombre": "machuca",
+      "rut": "111111111",
+      "email": "machuca@duocuc.cl",
+      "isactive": true,
+      "id": 6
+    }
+  ],
+  "palabras": [
+    {
+      "id": 1,
+      "palabra": "duoc maipu",
+      "username": "cachupina",
+      "fecha": "2015-01-01"
+    },
+    {
+      "palabra": "cumbia",
+      "username": "cachupina",
+      "id": 2
+    },
+    {
+      "palabra": "",
+      "username": "cachupina",
+      "id": 3
+    },
+    {
+      "palabra": "pruebafecha",
+      "username": "cachupina",
+      "id": 4
+    },
+    {
+      "palabra": "fecha2",
+      "username": "cachupina",
+      "id": 5
+    },
+    {
+      "palabra": "fecha3",
+      "username": "cachupina",
+      "fecha": "hoy",
+      "id": 6
+    },
+    {
+      "palabra": "fecha4",
+      "username": "cachupina",
+      "fecha": "18/11/2023",
+      "id": 7
+    },
+    {
+      "palabra": "fecha5",
+      "username": "cachupina",
+      "fecha": "18/11/2023",
+      "id": 8
+    },
+    {
+      "palabra": "prograapp",
+      "username": "paul",
+      "fecha": "20/11/2023",
+      "id": 9
+    },
+    {
+      "palabra": "wizepy",
+      "username": "paul",
+      "fecha": "21/11/2023",
+      "id": 10
+    },
+    {
+      "palabra": "",
+      "username": "cachupina",
+      "fecha": "23/11/2023",
+      "id": 11
+    },
+    {
+      "palabra": "",
+      "username": "cachupina",
+      "fecha": "23/11/2023",
+      "id": 12
+    },
+    {
+      "palabra": "Asignatura: prueba camara 1\nUsuario: demo\nFecha: 23/11/2023",
+      "username": "",
+      "fecha": "",
+      "id": 13
+    },
+    {
+      "palabra": "Asignatura: prueba 2 camara\nUsuario: demo\nFecha: 23/11/2023",
+      "username": "",
+      "fecha": "",
+      "id": 14
+    },
+    {
+      "palabra": "Asignatura: prueba 2 camara\nUsuario: demo\nFecha: 23/11/2023",
+      "username": "",
+      "fecha": "",
+      "id": 15
+    },
+    {
+      "palabra": "Asignatura: literatura\nUsuario: demo\nFecha: 23/11/2023",
+      "username": "",
+      "fecha": "",
+      "id": 16
+    },
+    {
+      "palabra": "Asignatura: literatura\nUsuario: demo\nFecha: 23/11/2023",
+      "username": "",
+      "fecha": "",
+      "id": 17
+    },
+    {
+      "palabra": "Asignatura: ultima333Profesor: demoFecha: 23/11/2023",
+      "username": "",
+      "fecha": "",
+      "id": 18
+    },
+    {
+      "palabra": "Asignatura: ultima prueba 19Profesor: demoFecha: 23/11/2023",
+      "username": "",
+      "fecha": "",
+      "id": 19
+    }
+  ]
+}

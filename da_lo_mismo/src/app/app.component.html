@@ -1,0 +1,26 @@
+<ion-app>
+  <ion-menu contentId="main" menuId="first" side="start" swipe-gesture="false">
+    <ion-header>
+      <ion-toolbar>
+        <img src="assets/logoassist.jpg" class="logoapp" >
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-button class="perfil-button" (click)="perfil()" expand="block" fill="clear" shape="round">
+       Mi Perfil
+      </ion-button>
+      <ion-menu-toggle *ngFor="let c of componentes">
+            <ion-item [routerLink]="c.redirecTo" detail="true">
+              <ion-icon slot="start" [name]="c.icon" color="warning"></ion-icon>
+              {{ c.name }}
+            </ion-item>
+
+            
+      </ion-menu-toggle>
+    
+    </ion-content>
+  </ion-menu>
+
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

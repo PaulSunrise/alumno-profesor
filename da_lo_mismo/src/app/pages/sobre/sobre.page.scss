@@ -1,0 +1,54 @@
+.logoapp {
+  width: 100%; 
+  height: auto; 
+  max-width: 100%; 
+  
+}
+
+ion-card {
+   background-color: black;
+
+}
+  
+ion-card-header {
+  text-align: center;
+   
+}
+  
+ion-card-content{
+    background-color: white;
+    padding: 5px;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+    text-size-adjust: 5px;
+    color: black;
+    text-justify:auto;
+
+}
+
+ion-card-subtitle{
+  color:white;
+
+}
+
+ion-card-title{
+  color:#FFB800;
+
+}
+
+ion-note {
+  border-radius: 50%;
+  background-color: #E1E0DD;
+  color: black; 
+  font-size: 16px; 
+  margin-top: 5px; 
+  text-align: center;
+  text-justify: auto;
+
+}
+
+ion-content {
+  --background: #E1E0DD; 
+
+}

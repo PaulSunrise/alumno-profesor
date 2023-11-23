@@ -1,0 +1,90 @@
+.logoapp {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    
+  }
+
+  ion-content {
+    --background: black;
+  }
+  
+  .logoapp {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .custom-title {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  ion-button {
+    --background: #FFB800;
+    --background-hover: black;
+    --color: white;
+    --border-radius: 20px;
+    --border-color: black;
+    --border-style: solid;
+    --border-width: 1px;
+    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+  }
+  
+  .custom-button {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  ion-card {
+    margin-top: 20px;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 10px;
+  }
+  
+  ion-card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Additional styling for the input items */
+  ion-item {
+    margin-top: 10px;
+  }
+  
+  ion-label {
+    color: black;
+  }
+  
+
+  .custom-title.nombreusuario {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    animation: cambiaColor 3s infinite alternate;
+  }
+  
+  @keyframes cambiaColor {
+    0% {
+      color: #FFB800;
+      background-color: black;
+      border-radius: 3px;
+    }
+    50% {
+      color: black;
+      background-color: #FFB800;
+    }
+    100% {
+      color: black;
+      background-color: white;
+    }
+  }
+  

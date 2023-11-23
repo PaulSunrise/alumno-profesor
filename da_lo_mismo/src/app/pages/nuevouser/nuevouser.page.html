@@ -1,0 +1,152 @@
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"
+      icon="arrow-back-circle-outline" 
+      text="Volver"
+       color="dark"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+
+  </ion-header>
+  <ion-toolbar>
+    <img src="assets/logoassist.jpg" class="logoapp" >
+  </ion-toolbar>
+  <ion-label class="registrar">Registrarse</ion-label>
+
+
+
+
+
+
+  <ion-card>
+    <ion-card-header>
+            <ion-title size="large" class="custom-title"></ion-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form class="bordes-formulario">
+        <ion-list>
+
+          <ion-item>
+            <ion-label position="stacked">Nombre de Usuario</ion-label>
+            <ion-input type="text" name="username" [(ngModel)]="newUsuario.username" placeholder="Usuario" required></ion-input>
+            <div *ngIf="loginForm.get('username')?.invalid && (loginForm.get('username')?.dirty || loginForm.get('username')?.touched)">
+              <div style="color:red" *ngIf="loginForm.get('username')?.hasError('required')">
+                *Username es requerido
+              </div>
+              <div style="color:red" *ngIf="loginForm.get('username')?.hasError('minlength')">
+                *Username minimo de 6 caracteres
+              </div>
+            </div>
+          </ion-item>
+
+        <!--  <ion-item>
+            <ion-label position="floating">Role</ion-label>
+            <ion-input type="text" placeholder="ingrese role"
+                name="role" [(ngModel)]="newUsuario.role"></ion-input>
+          </ion-item>-->
+
+
+          
+          <ion-item>
+            <ion-label position="stacked">Contraseña</ion-label>
+            <ion-input type="password" name="password" [(ngModel)]="newUsuario.password" placeholder="Contraseña" required></ion-input>
+            <div *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('username')?.touched)">
+              <div style="color:red" *ngIf="loginForm.get('password')?.hasError('required')">
+                *Password es requerido
+              </div>
+              <div style="color:red" *ngIf="loginForm.get('password')?.hasError('minlength')">
+                *Password minimo de 8 caracteres
+              </div>
+            </div>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Nombre</ion-label>
+            <ion-input type="text" placeholder="ingrese nombre"
+                name="nombre" [(ngModel)]="newUsuario.nombre"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Rut</ion-label>
+            <ion-input type="text" placeholder="ingrese Rut"
+                name="rut" [(ngModel)]="newUsuario.rut"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Correo Electronico</ion-label> 
+            <ion-input type="email" placeholder="xxxxxxxx@duocuc.cl"
+            name="email" [(ngModel)]="newUsuario.email"></ion-input>
+            </ion-item>
+
+            <!--<ion-item>
+              <ion-label position="floating">Asignatura 1</ion-label> 
+              <ion-input type="text" placeholder="ingrese asignatura"
+              name="asignatura1" [(ngModel)]="newUsuario.asignatura1"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label position="floating">semestre 1</ion-label> 
+                <ion-input type="text" placeholder="ingrese semestre"
+                name="semestre1" [(ngModel)]="newUsuario.semestre1"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label position="floating">Año Semestre</ion-label> 
+                  <ion-input type="text" placeholder="ingrese año semestre"
+                  name="anio_asig1" [(ngModel)]="newUsuario.anio_asig1"></ion-input>
+                  </ion-item>  
+
+                  <ion-item>
+                    <ion-label position="floating">horas semanales</ion-label> 
+                    <ion-input type="text" placeholder="ingrese horas semanales"
+                    name="horas_asig1" [(ngModel)]="newUsuario.horas_asig1"></ion-input>
+                    </ion-item>  
+
+
+              <ion-item>
+                <ion-label position="floating">Asignatura 2</ion-label> 
+                <ion-input type="text" placeholder="ingrese asignatura"
+                name="asignatura2" [(ngModel)]="newUsuario.asignatura2"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label position="floating">semestre 2</ion-label> 
+                  <ion-input type="text" placeholder="ingrese semestre"
+                  name="semestre2" [(ngModel)]="newUsuario.semestre2"></ion-input>
+                  </ion-item>
+  
+                  <ion-item>
+                    <ion-label position="floating">Año Semestre</ion-label> 
+                    <ion-input type="text" placeholder="ingrese año semestre"
+                    name="anio_asig2" [(ngModel)]="newUsuario.anio_asig2"></ion-input>
+                    </ion-item>  
+  
+                    <ion-item>
+                      <ion-label position="floating">horas semanales</ion-label> 
+                      <ion-input type="text" placeholder="ingrese horas semanales"
+                      name="horas_asig2" [(ngModel)]="newUsuario.horas_asig2"></ion-input>
+                      </ion-item> 
+      
+               <ion-list>
+                  <ion-item>
+                    <ion-select placeholder="escribir profesor o alumno">
+                      <ion-select-option value="tipo">Profesor</ion-select-option>
+                      <ion-select-option value="tipo">Alumno</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>-->
+   
+        </ion-list>
+        <ion-button (click)="Enviar()" expand="block" fill="solid" shape="round">
+          Enviar
+        </ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

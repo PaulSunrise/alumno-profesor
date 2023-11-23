@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"
+      icon="arrow-back-circle-outline" 
+      text="Volver"
+       color="dark"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+
+  </ion-header>
+  <ion-toolbar>
+    <img src="assets/logoassist.jpg" class="logoapp" >
+  </ion-toolbar>
+
+
+
+
+
+<ion-header [translucent]="true">
+ 
+    <ion-title class="custom-title nombreusuario">Hola! {{ usuario.username }} <br>¿Que deseas actualizar?</ion-title>
+  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Actualizar </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+   
+  </ion-card>
+
+  <form>
+    
+    <ion-item >
+      <ion-label>Usuario: </ion-label>
+      <ion-input type="text" name="txtUsername" [(ngModel)]="usuario.username" disabled></ion-input>
+    </ion-item> 
+
+    <ion-item>
+      <ion-label position="floating">Password: </ion-label>
+      <ion-input type="password" name="txtPass" [(ngModel)]="usuario.password"></ion-input>
+    </ion-item>
+
+   
+    <ion-item>
+      <ion-label position="floating">Email: </ion-label>
+      <ion-input type="email" name="txtemail" [(ngModel)]="usuario.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Nombre: </ion-label>
+      <ion-input type="text" name="txtnombre" [(ngModel)]="usuario.nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Rut: </ion-label>
+      <ion-input type="text" name="txtrut" [(ngModel)]="usuario.rut" disabled></ion-input>
+    </ion-item>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="ActualizarUsuario()">Actualizar Usuario</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+</ion-content>

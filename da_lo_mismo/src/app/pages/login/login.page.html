@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"
+      icon="arrow-back-circle-outline" 
+      text="Volver"
+       color="dark"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+
+  </ion-header>
+  <ion-toolbar>
+    <img src="assets/logoassist.jpg" class="logoapp" >
+  </ion-toolbar>
+  <ion-label class="ingres">Ingresar</ion-label>
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <ion-item>
+      <ion-label position="floating">Usuario: </ion-label>
+      <ion-input type="text" formControlName="username"></ion-input>
+    </ion-item>
+    
+    <div *ngIf="loginForm.get('username')?.invalid && (loginForm.get('username')?.dirty || loginForm.get('username')?.touched)">
+      <div style="color:#FFB800" *ngIf="loginForm.get('username')?.hasError('required')">
+          *Username es obligatorio
+      </div>
+      <div style="color:#FFB800"  *ngIf="loginForm.get('username')?.hasError('minlength')">
+          *Username debe tener mínimo 4 caracteres
+      </div>
+    </div>
+
+    <ion-item>
+      <ion-label position="floating">Password: </ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+
+    <div style="color:#FFB800" *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched)">
+      <div *ngIf="loginForm.get('password')?.hasError('required')">
+          *Password es obligatoria
+      </div>
+      <div style="color:#FFB800" *ngIf="loginForm.get('password')?.hasError('minlength')">
+          *Password debe tener mínimo 4 caracteres
+      </div>
+    </div>
+
+     
+     <ion-row>
+      <ion-col>
+        <ion-button type="submit" (click)="login()" [disabled]="!loginForm.valid">Login</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
